@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: inter , Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 12%);
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.top-image{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.top-image img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+h2{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+.london{
+    color: hsl(75, 94%, 57%);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+}
+p{
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    padding: 10PX;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    overflow: hidden;
+
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    font-weight: 400;
+    font-size: 10px;
+    
+}
+button:hover{
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+    color:black
+}
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+@media screen and (max-width:375px) {
+    .card{
+        max-width: 50vh;
+        width: 13.75rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    p , .london{
+        font-size: .5rem;
+    }
+    button{
+        padding: .5rem;
+    }
+}
